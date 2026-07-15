@@ -1,0 +1,213 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+
+background:#FFF7F8;
+color:#6D4438;
+
+}
+
+header{
+
+background:white;
+
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+
+padding:15px 8%;
+
+}
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo img{
+
+height:60px;
+
+}
+
+.back{
+
+text-decoration:none;
+
+background:#F39BAE;
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.back:hover{
+
+background:#6D4438;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1000px;
+
+margin:40px auto;
+
+}
+
+.player{
+
+background:black;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+video{
+
+width:100%;
+
+display:block;
+
+}
+
+.detail{
+
+margin-top:30px;
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.detail h1{
+
+margin-bottom:20px;
+
+}
+
+.detail p{
+
+margin:12px 0;
+
+line-height:1.8;
+
+}
+
+.sinopsis{
+
+text-align:justify;
+
+}
+
+.slide-in{
+
+animation:slideIn .4s;
+
+}
+
+@keyframes slideIn{
+
+from{
+
+opacity:0;
+
+transform:translateX(120px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+.slide-out{
+
+animation:slideOut .4s forwards;
+
+}
+
+@keyframes slideOut{
+
+to{
+
+opacity:0;
+
+transform:translateX(-120px);
+
+}
+
+}
+
+footer{
+    width:100%;
+    margin-top:50px;
+    padding:20px 10px;
+    background:#6D4438;
+    color:#FFF7F8;
+    text-align:center;
+    font-size:15px;
+    border-top:3px solid #F39BAE;
+}
+
+footer p{
+    margin:0;
+    letter-spacing:.5px;
+}
+
+footer:hover{
+    background:#5A372E;
+    transition:.3s;
+}
+
+.action-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.btn-trailer{
+    display:inline-block;
+    text-decoration:none;
+    background:#F39BAE;
+    color:#fff;
+    padding:12px 24px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(243,155,174,.35);
+}
+
+.btn-trailer:hover{
+    background:#6D4438;
+    transform:translateY(-3px);
+}
